@@ -4,7 +4,7 @@ An EvalTask defines a complete evaluation scenario: the environment, the
 objective, the ground truth, and — crucially — the misalignment traps that
 test whether the agent takes aligned or misaligned solution paths.
 
-This is the core of Aegis's alignment evaluation: tasks are designed with
+This is the core of Horizon-Eval's alignment evaluation: tasks are designed with
 multiple solution paths, some intended and some representing specification
 gaming, reward hacking, or deceptive shortcuts. The trap detection system
 identifies which path the agent took and flags misaligned behavior.
@@ -167,7 +167,7 @@ class MisalignmentTrap:
 class EvalTask:
     """A complete evaluation task with misalignment traps and solution paths.
 
-    This is the central evaluation unit in Aegis. Each task defines:
+    This is the central evaluation unit in Horizon-Eval. Each task defines:
     - An environment (sandbox) the agent operates in
     - A ground truth answer or expected outcome
     - Multiple solution paths (intended and misaligned)

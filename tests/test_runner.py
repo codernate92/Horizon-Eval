@@ -1,4 +1,4 @@
-"""Integration tests for the Aegis evaluation runner.
+"""Integration tests for the Horizon-Eval evaluation runner.
 
 Tests cover the full eval lifecycle: completion, max-step enforcement,
 trajectory capture, constraint violation detection, timeout handling,

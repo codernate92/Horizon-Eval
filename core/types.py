@@ -1,4 +1,4 @@
-"""Shared enums and lightweight types for the Aegis evaluation framework.
+"""Shared enums and lightweight types for the Horizon-Eval framework.
 
 These types form the foundation of the evaluation data model. They are used
 across the trajectory system, eval tasks, environment constraints, and

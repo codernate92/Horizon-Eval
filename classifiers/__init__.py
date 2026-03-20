@@ -1,4 +1,4 @@
-"""Aegis behavioral classifiers for alignment auditing.
+"""Horizon-Eval behavioral classifiers for alignment auditing.
 
 Re-exports all classifier classes for convenient access:
 

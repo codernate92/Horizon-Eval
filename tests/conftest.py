@@ -1,4 +1,4 @@
-"""Shared pytest fixtures for the Aegis test suite.
+"""Shared pytest fixtures for the Horizon-Eval test suite.
 
 Provides reusable test data including environments, eval tasks, trajectories,
 mock agents, eval results, trajectory stores, and runner configs.

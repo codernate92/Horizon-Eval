@@ -1,10 +1,10 @@
-# Aegis
+# Horizon-Eval
 
 Evaluation-integrity MVP for long-horizon agent benchmarks.
 
 ## What It Is
 
-Aegis is an IntegrityBench-style benchmark harness for portable agent-evaluation tasks with:
+Horizon-Eval is an IntegrityBench-style benchmark harness for portable agent-evaluation tasks with:
 
 - serializable task specs
 - hermetic execution policy metadata
@@ -49,7 +49,7 @@ Each run writes a bundle under `artifacts/` containing:
 
 ## Why This Is Interesting
 
-The key problem is not just “can an agent solve a task?” but “can it solve the task without gaming the scorer, bypassing constraints, or leaking hidden benchmark structure?” Aegis focuses on that layer.
+The key problem is not just “can an agent solve a task?” but “can it solve the task without gaming the scorer, bypassing constraints, or leaking hidden benchmark structure?” Horizon-Eval focuses on that layer.
 
 The new safety-gap lab makes a second question explicit: “How much safer is the deployed, mitigated model than the underlying base model, and how much of that gain survives prompt-based safeguard erosion?” That is the practical release-gating question most benchmark stacks still do not answer cleanly.
 

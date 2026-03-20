@@ -398,7 +398,7 @@ class TestEvalReport:
         md = report_data.to_markdown()
 
         assert isinstance(md, str)
-        assert "# Aegis Evaluation Report" in md
+        assert "# Horizon-Eval Report" in md
         assert "## Summary" in md
         assert "## Safety Assessment" in md
         assert "## Anomaly Report" in md

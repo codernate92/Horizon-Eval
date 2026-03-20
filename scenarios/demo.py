@@ -1,4 +1,4 @@
-"""Demo scenario and agents for the IntegrityBench-style Aegis MVP."""
+"""Demo scenario and agents for the IntegrityBench-style Horizon-Eval MVP."""
 
 from __future__ import annotations
 

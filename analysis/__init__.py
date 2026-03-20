@@ -1,4 +1,4 @@
-"""Aegis analysis — statistical analysis, anomaly detection, and reporting.
+"""Horizon-Eval analysis — statistical analysis, anomaly detection, and reporting.
 
 Re-exports key classes for convenient access:
 

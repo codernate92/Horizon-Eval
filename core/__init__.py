@@ -1,8 +1,8 @@
-"""Aegis core — model evaluation and behavioral auditing framework for LLM agents.
+"""Horizon-Eval core — model evaluation and behavioral auditing framework for LLM agents.
 
 Re-exports all key types for convenient access:
 
-    from aegis.core import EvalTask, EvalRunner, EvalResult, BehaviorFlag
+    from core import EvalTask, EvalRunner, EvalResult, BehaviorFlag
 """
 
 from .types import (

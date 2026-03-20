@@ -1,6 +1,6 @@
 """Base classifier infrastructure for behavioral analysis of agent trajectories.
 
-Provides the abstract base class all Aegis classifiers inherit from,
+Provides the abstract base class all Horizon-Eval classifiers inherit from,
 the standardized result type, and a pipeline for composing multiple
 classifiers into a single analysis pass.
 """
@@ -67,7 +67,7 @@ class ClassifierResult:
 
 
 class BaseClassifier(ABC):
-    """Abstract base class for all Aegis behavioral classifiers.
+    """Abstract base class for all Horizon-Eval behavioral classifiers.
 
     Classifiers are stateless analysis components that inspect an agent's
     evaluation trajectory and produce structured findings about behavioral

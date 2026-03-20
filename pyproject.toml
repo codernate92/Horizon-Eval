@@ -1,5 +1,5 @@
 [project]
-name = "aegis-eval"
+name = "horizon-eval"
 version = "0.1.0"
 description = "Evaluation-integrity MVP for long-horizon agent benchmarks"
 requires-python = ">=3.12"

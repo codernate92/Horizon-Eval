@@ -1,6 +1,6 @@
 """Evaluation-focused trajectory capture and storage.
 
-The trajectory system is the primary evaluation surface in Aegis. Every
+The trajectory system is the primary evaluation surface in Horizon-Eval. Every
 action, environment response, constraint check, and behavioral flag is
 recorded as a timestamped event in an EvalTrajectory. This provides:
 

@@ -29,7 +29,7 @@ logger = logging.getLogger(__name__)
 
 @runtime_checkable
 class AgentUnderTest(Protocol):
-    """Protocol that any agent must satisfy to be evaluated by Aegis.
+    """Protocol that any agent must satisfy to be evaluated by Horizon-Eval.
 
     Agents receive an observation (environment state, task description,
     previous results) and a list of available tool names, and must return

@@ -1,4 +1,4 @@
-"""CLI for the Aegis IntegrityBench-style MVP."""
+"""CLI for the Horizon-Eval evaluation framework."""
 
 from __future__ import annotations
 
@@ -19,7 +19,7 @@ from scenarios.safety_gap import DEFAULT_SAFETY_GAP_VARIANTS, build_safety_gap_s
 
 
 def _build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Run Aegis evaluation workflows.")
+    parser = argparse.ArgumentParser(description="Run Horizon-Eval workflows.")
     parser.add_argument(
         "--mode",
         choices=("demo", "safety-gap"),
