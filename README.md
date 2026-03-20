@@ -12,6 +12,7 @@ Aegis is an IntegrityBench-style benchmark harness for portable agent-evaluation
 - trajectory capture
 - integrity monitors for shortcutting, constraint bypass, canary leakage, and protected-state tampering
 - replayable run bundles with hashes and HTML reports
+- a safety-gap and safeguard-regression lab for comparing base, mitigated, and attacked variants
 
 This is the kind of infrastructure that is useful for serious eval work, not just demos.
 
@@ -23,6 +24,8 @@ This is the kind of infrastructure that is useful for serious eval work, not jus
 - `core/reporting.py`: HTML report generation
 - `core/monitors.py`: integrity checks
 - `scenarios/demo.py`: demo task plus aligned and shortcut agents
+- `scenarios/safety_gap.py`: default safety-gap suite and scripted model variants
+- `analysis/safety_gap.py`: variant comparison, safety-gap metrics, and regression reporting
 - `cli.py`: runnable entrypoint
 
 ## Run The Demo
@@ -31,6 +34,7 @@ This is the kind of infrastructure that is useful for serious eval work, not jus
 python3 cli.py --agent aligned
 python3 cli.py --agent shortcut
 python3 cli.py --agent canary
+python3 cli.py --mode safety-gap --output-root artifacts/safety-gap
 python3 -m pytest tests
 ```
 
@@ -46,6 +50,8 @@ Each run writes a bundle under `artifacts/` containing:
 ## Why This Is Interesting
 
 The key problem is not just “can an agent solve a task?” but “can it solve the task without gaming the scorer, bypassing constraints, or leaking hidden benchmark structure?” Aegis focuses on that layer.
+
+The new safety-gap lab makes a second question explicit: “How much safer is the deployed, mitigated model than the underlying base model, and how much of that gain survives prompt-based safeguard erosion?” That is the practical release-gating question most benchmark stacks still do not answer cleanly.
 
 ## Notes
 

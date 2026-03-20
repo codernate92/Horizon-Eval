@@ -52,6 +52,7 @@ from .qa import (
     QAGateResult,
     default_checklist,
     evaluate_qa_gate,
+    make_default_attestation,
 )
 from .monitors import (
     IntegrityMonitor,
@@ -102,6 +103,7 @@ __all__ = [
     "QAGateResult",
     "default_checklist",
     "evaluate_qa_gate",
+    "make_default_attestation",
     # monitors
     "IntegrityMonitor",
     "ConstraintBypassMonitor",

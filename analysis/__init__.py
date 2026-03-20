@@ -19,6 +19,15 @@ from .anomaly import (
 )
 
 from .report import EvalReport
+from .safety_gap import (
+    SafetyGapVariant,
+    VariantTaskRecord,
+    SafetyGapSummary,
+    SafetyGapComparison,
+    SafeguardRegression,
+    SafetyGapReport,
+    SafetyGapLab,
+)
 
 __all__ = [
     # statistics
@@ -32,4 +41,12 @@ __all__ = [
     "AnomalyDetector",
     # report
     "EvalReport",
+    # safety-gap
+    "SafetyGapVariant",
+    "VariantTaskRecord",
+    "SafetyGapSummary",
+    "SafetyGapComparison",
+    "SafeguardRegression",
+    "SafetyGapReport",
+    "SafetyGapLab",
 ]

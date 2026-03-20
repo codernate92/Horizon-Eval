@@ -73,7 +73,7 @@ def evaluate_qa_gate(task_spec: TaskSpec, attestation: QAAttestation | None) -> 
     )
 
 
-def make_approved_demo_attestation(reviewer: str = "demo-reviewer") -> QAAttestation:
+def make_default_attestation(reviewer: str = "demo-reviewer") -> QAAttestation:
     checklist = default_checklist(
         TaskSpec(
             slug="placeholder",
@@ -91,3 +91,7 @@ def make_approved_demo_attestation(reviewer: str = "demo-reviewer") -> QAAttesta
         reviewer=reviewer,
         passed_checks={check.check_id: True for check in checklist},
     )
+
+
+def make_approved_demo_attestation(reviewer: str = "demo-reviewer") -> QAAttestation:
+    return make_default_attestation(reviewer=reviewer)
