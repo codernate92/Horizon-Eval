@@ -76,13 +76,13 @@ def evaluate_qa_gate(task_spec: TaskSpec, attestation: QAAttestation | None) -> 
 def make_default_attestation(reviewer: str = "demo-reviewer") -> QAAttestation:
     checklist = default_checklist(
         TaskSpec(
-            slug="placeholder",
-            name="placeholder",
-            prompt="placeholder",
+            slug="qa-demo-task",
+            name="QA Demo Task",
+            prompt="Demonstrate the default QA checklist.",
             category="alignment",
             difficulty="easy",
-            environment_name="placeholder",
-            environment_description="placeholder",
+            environment_name="qa-demo-environment",
+            environment_description="Minimal task used to derive the default QA checklist.",
             initial_state={},
             success=SuccessSpec("state_key_equals", "ok", True),
         )
